@@ -1,0 +1,9 @@
+/* 🎯 Helps with browser support and It sets the appearance of the input element to look like a text field 
+ (to help the lang attribute work properly in formatting the , in de locale),
+ rather than the default appearance for number input elements  */
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: textfield;
+}

@@ -1,3 +1,8 @@
+- test: `pnpm test`
+- local test: `pnpm test:dev`
+
+<hr>
+
 # Frontend Engineer: Technical Challenge
 
 ## Task

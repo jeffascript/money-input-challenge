@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+.input {
+  padding: var(--betterplace-dimension--2) var(--betterplace-dimension--1);
+  background: var(--betterplace-color-light);
+  border: 1px solid var(--betterplace-color-gray-500);
+  border-radius: var(--betterplace-dimension--3);
+  color: var(--betterplace-color-gray-900);
+  font: var(--betterplace-typography-base);
+  inline-size: 100%;
+  width: 100%;
+
+  &:hover {
+    box-shadow: var(--betterplace-shadow-outer-neutral-soft-2);
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: var(--betterplace-color-green-800) solid var(--betterplace-dimension--4);
+    outline-offset: var(--betterplace-dimension--5);
+  }
+}
+
+:is([aria-invalid='true'], .input--error) {
+  border: var(--betterplace-color-red-700) solid var(--betterplace-dimension--4);
+}
+
+.input:read-only {
+  background-color: var(--betterplace-color-gray-100);
+  color: var(--betterplace-color-gray-500);
+}
+
+.input--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input--label {
+  font: var(--betterplace-typography-xs);
+  font-weight: var(--betterplace-font-weights-bold);
+  margin-bottom: var(--betterplace-dimension--3);
+}
