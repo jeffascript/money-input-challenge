@@ -22,7 +22,7 @@ const InputWrapper = forwardRef(
     const generatedId = useId()
     const customId = `${generatedId}-${name ?? id ?? 'moneyinput'}`
 
-    const formattedCurrency = useCurrencyFormatter(props.locale as string, props.value ?? 0)
+    const formattedCurrency = useCurrencyFormatter(props.lang as string, props.value ?? 0)
 
     return (
       <>
