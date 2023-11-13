@@ -1,6 +1,6 @@
 - test: `pnpm test`
 - local test runner: `pnpm test:dev`
-- start: `pnpm dev`,
+- start: `pnpm storybook`,
 
 <hr>
 
