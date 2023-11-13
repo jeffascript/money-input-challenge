@@ -95,13 +95,15 @@ const ExampleApp = ({ ...args }) => {
   return (
     <div
       // inline styline purposely used here just for this mini demo/showcase
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: 'var(--betterplace-viewport-min)',
-      }}
+      style={
+        {
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: 'var(--betterplace-viewport-min)',
+        } as React.CSSProperties
+      }
     >
       <MoneyInput {...args} value={value} onChange={handleSetValue} locale={args.locale} as={InputWrapper} />
     </div>

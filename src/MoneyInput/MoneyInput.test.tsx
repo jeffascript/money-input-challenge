@@ -16,7 +16,7 @@ describe('MoneyInput', () => {
     expect(screen.getByLabelText(INPUT_LABEL)).toHaveValue(2.56)
   })
 
-  it('On change, the component should convert the value to integer (in Cents) ', () => {
+  it('should on change, allow the component convert the value to integer (in Cents) ', () => {
     const spy = vi.fn()
     render(<MoneyInput aria-label={INPUT_LABEL} onChange={spy} value={18} />)
     const input = screen.getByLabelText<HTMLInputElement>(INPUT_LABEL)
@@ -24,7 +24,7 @@ describe('MoneyInput', () => {
     expect(spy).toHaveBeenCalledWith(10)
   })
 
-  it('On change, the component will log the new value in console ', () => {
+  it('should on change, mkae the component log the new value in console ', () => {
     const spy = vi.fn()
     render(<MoneyInput aria-label={INPUT_LABEL} onChange={spy} value={256} />)
     const input = screen.getByLabelText<HTMLInputElement>(INPUT_LABEL)
