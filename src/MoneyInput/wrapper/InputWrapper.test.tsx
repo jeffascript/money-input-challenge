@@ -60,11 +60,4 @@ describe('InputWrapper', () => {
     const descriptionElement = screen.queryByText('€100.00')
     expect(descriptionElement).not.toBeInTheDocument()
   })
-  // it('should format the money for different locales', () => {
-  //   render(<InputWrapper {...mockProps} locale="de" value={73.8} />)
-
-  //   const descriptionElement = screen.queryByText('€73,80')
-
-  //   expect(descriptionElement).toBeInTheDocument()
-  // })
 })
